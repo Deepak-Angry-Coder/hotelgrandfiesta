@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/svg/htg__2_-removebg-preview.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hotel The Grand</title>
+  </head>
+  <body>
+    <!-- hero section -->
+
+    <div class="fixed_buttn">
+      <div class="main_btnns_wrpr">
+        <a href="#home"><i class="far fa-caret-square-up"></i></a> <br />
+        <a href="https://wa.me/919719975601" target="_blank"
+          ><i class="fab fa-whatsapp-square"></i
+        ></a>
+      </div>
+    </div>
+
+    <section class="wtsp_register" id="wtsp_register">
+      <div class="container">
+        <div class="user_section">
+          <div class="mob_nmbr">
+            <a href="https://wa.me/919719975601" target="_blank"
+              ><span>Room Booking Enquiry</span
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+          <div class="register">
+            <div class="LogIn" id="LogIn">
+              <button type="button" id="LogIn_Function">LogIn</button>
+            </div>
+
+            <div class="SignUp" id="SignUp">
+              <button type="button" id="SignUp_Function">SignUp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login logout button -->
+
+    <section class="logout_register" id="logout_register">
+      <div class="container">
+        <div class="user_section">
+          <div class="mob_nmbr">
+            <a href="https://wa.me/919719975601"
+              ><span>Room Booking Enquiry</span
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+          <div class="LogOUTT" id="LogOUTT">
+            <div class="logouts">
+              <button type="button" id="LogOut">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login signup -->
+    <!-- login -->
+
+    <section class="Login_signup" id="Registration_">
+      <div class="container">
+        <div class="form_wrpr" id="form_wrprs">
+          <button type="button" id="close_tab" class="close_btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="login_wrpr">
+            <div class="login_image">
+              <img src="/images/svg/undraw_login_re_4vu2.svg" alt="Login" />
+            </div>
+
+            <form id="loginForm" method="post">
+              <div class="form-group">
+                <i class="fa-solid fa-at" class="icon"></i>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  name="loginEmail"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <i class="fa-solid fa-key" class="icon"></i>
+                <input
+                  type="password"
+                  id="loginPassword"
+                  name="loginPassword"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <button type="submit" id="login">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sign up -->
+
+    <section id="SignUP">
+      <div class="container">
+        <div class="signUPP" id="form_wrpr">
+          <div class="signup_wrpr">
+            <button type="button" id="sign_close_btn" class="sign_close_btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="sign_main">
+              <div class="signup_image">
+                <img
+                  src="/images/svg/undraw_eating_together_re_ux62.svg"
+                  alt=""
+                />
+              </div>
+
+              <form id="signupForm" method="post">
+                <div class="form-group">
+                  <i class="fa-solid fa-at icon"></i>
+                  <input
+                    type="email"
+                    id="signupEmail"
+                    name="signupEmail"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <i class="fa-solid fa-key icon"></i>
+                  <input
+                    type="password"
+                    id="signupPassword"
+                    name="signupPassword"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <button type="submit">Signup</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile menus with logo -->
+
+    <section class="top_logo">
+      <div class="container">
+        <div class="mob_nav">
+          <a data-bs-toggle="collapse" href="#collapseExample" role="button">
+            <img src="./images/svg/bar-chart-3.svg" alt="" />
+          </a>
+          <div class="logo_div">
+            <p>hotel the grand</p>
+          </div>
+        </div>
+
+        <div class="mob_links_sec collapse" id="collapseExample">
+          <div class="links_wrpr">
+            <div class="logo">
+              <a href="#home"><img src="./images/logo.png" alt="logo" /></a>
+              <div class="welcome">
+                <h2>
+                  <br />
+                  rooms <br />
+                  <span> restaurant </span> <br />
+                  banquet
+                </h2>
+              </div>
+            </div>
+
+            <div class="mob_links">
+              <a href="#home">home</a>
+              <a href="#restaurant">restaurant</a>
+              <a href="#menu">menu</a>
+              <a href="#rooms">rooms</a>
+              <a href="#gallery">gallery</a>
+              <a href="#aboutus">about us</a>
+              <a href="#contactus">contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- navbar  -->
+
+    <nav>
+      <div class="main container" id="home">
+        <div class="logo">
+          <a href="#home"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="welcome">
+          <h2>
+            <br />
+            rooms &#9734; <span> restaurant </span> &#9734; banquet
+          </h2>
+        </div>
+      </div>
+    </nav>
+
+    <section class="magic_shadow">
+      <div class="container">
+        <div class="links">
+          <a href="#home">home</a>
+          <a href="#restaurant">restaurant</a>
+          <a href="#menu">menu</a>
+          <a href="#rooms">rooms</a>
+          <a href="#gallery">gallery</a>
+          <a href="#aboutus">about us</a>
+          <a href="#contactus">contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero_slider -->
+
+    <section class="hero_slider">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/hotel2.jpg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/unsplash/2.jpg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/unsplash/4.jpg" class="d-block" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- restaurant section -->
+
+    <section class="restaurant" id="restaurant">
+      <h2 class="heading">Grand fiesta restaurant</h2>
+
+      <div class="container">
+        <div class="grand_wrapper magic_shadow">
+          <div class="left_part">
+            <h3>Welcome</h3>
+            <span>Dear guest ,</span>
+            <p>Warm Wishes From Grand Fiesta Restaurant !</p>
+            <p>
+              With Pride & Passion, we serve you. We acknowledge to Personalize
+              food of your choice & taste. Dear Guest, We follow the accurate
+              standard in hygiene, cleanliness,quality of food & services to
+              meet your expectation and smile. 😊
+            </p>
+
+            <span>"Enjoy Your Delicious Food."</span>
+          </div>
+
+          <div class="right_part">
+            <img src="./images/hotel2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- foods section -->
+
+    <section class="foods_items">
+      <div class="container">
+        <div class="food_wrpr">
+          <h3 class="sub_heading">food <span>items</span></h3>
+          <div class="cards_wrpr">
+            <div class="card">
+              <h6><a href="#gallery">Check More</a></h6>
+              <img src="./images/foods items/spl. thali.jpg" alt="" />
+              <p>veg food</p>
+            </div>
+            <div class="card">
+              <h6><a href="#gallery">Check More</a></h6>
+              <img src="./images/foods items/spl. chicken.jpg" alt="" />
+              <p>non veg food</p>
+            </div>
+            <div class="card">
+              <h6><a href="#gallery">Check More</a></h6>
+              <img src="./images/foods items/fast food.jpg" alt="" />
+              <p>fast food</p>
+            </div>
+            <div class="card">
+              <h6><a href="#gallery">Check More</a></h6>
+              <img src="./images/foods items/oreo shake.jpg" alt="" />
+              <p>beverages</p>
+            </div>
+          </div>
+
+          <div class="buttn_wrpr">
+            <div class="button-55"><a href="#gallery">check more</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu cards -->
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="main_wrpr_menu">
+          <h3 class="sub_heading">menu <span>cards</span></h3>
+          <div class="veg_nonveg">
+            <h5><span>🟢</span> veg items</h5>
+            <h5><span>🔴</span> non veg items</h5>
+          </div>
+          <div class="menu_cards_">
+            <div class="m_card">
+              <img
+                src="./images/retuarent/Screenshot_20220225_110002.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="m_card">
+              <img
+                src="./images/retuarent/Screenshot_20220225_110102.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="m_card">
+              <img
+                src="./images/retuarent/Screenshot_20220225_110154.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="m_card">
+              <img
+                src="./images/retuarent/Screenshot_20220225_110258.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="m_card">
+              <img
+                src="./images/retuarent/Screenshot_20220225_110331.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="m_card">
+              <img
+                src="./images/svg/undraw_eating_together_re_ux62.svg"
+                alt=""
+              />
+              <span>&heartsuit; Enjoy Your Delicious Food &heartsuit;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rooms <section> -->
+
+    <section class="room_facility" id="rooms">
+      <h2 class="heading">our room's facility</h2>
+      <div class="container">
+        <div class="main_wrapper">
+          <div class="_room">
+            <h3 class="sub_heading">Deluxe <span>rooms</span></h3>
+
+            <div class="room_details">
+              <h6>amenities</h6>
+              <p>
+                sleepers , cozy bed , soap , body lotion , shampoo ,tv ,
+                dressing mirror , attached washroom , hot water
+              </p>
+            </div>
+
+            <div class="img_item">
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/delux/deluxe7.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/delux/delux2.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/delux/delux1.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/delux/deluxe3.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="buttn_wrpr">
+              <div class="button-55"><a href="#contactus">book now</a></div>
+            </div>
+          </div>
+
+          <div class="_room">
+            <h3 class="sub_heading">Luxury <span>rooms</span></h3>
+
+            <div class="room_details">
+              <h6>amenities</h6>
+              <p>
+                dental kit , comb , disposable sleepers , cozy bed , soap , body
+                lotion , shampoo ,tv , A/C , dressing mirror , attached washroom
+                , hot water
+              </p>
+            </div>
+
+            <div class="img_item">
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/luxary/luxury10.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/luxary/luxury3.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/luxary/luxury8.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/luxary/luxury11.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="buttn_wrpr">
+              <div class="button-55"><a href="#contactus">book now</a></div>
+            </div>
+          </div>
+
+          <div class="_room">
+            <h3 class="sub_heading">standard <span>rooms</span></h3>
+
+            <div class="room_details">
+              <h6>amenities</h6>
+              <p>
+                sleepers , soap , shampoo ,tv , A/C , dressing mirror , attached
+                washroom , hot water
+              </p>
+            </div>
+
+            <div class="img_item">
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/standard/standard10.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/standard/standard6.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/standard/standard11.jpg"
+                alt=""
+              />
+              <img
+                class="img-thumbnail"
+                src="./images/rooms/standard/standard.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="buttn_wrpr">
+              <div class="button-55"><a href="#contactus">book now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery <section> -->
+
+    <section class="gallery" id="gallery">
+      <h2 class="heading">Food Items & Gallery</h2>
+      <div class="container">
+        <div class="cards_wrpr">
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/spl. thali.jpg" alt="" />
+            <p>spl. plate</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/handi paneer.jpg" alt="" />
+            <p>handi paneer</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/kadhai paneer.jpg" alt="" />
+            <p>kadhai paneer</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/rice.jpg" alt="" />
+            <p>steam rice</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/fry fish.jpg" alt="" />
+            <p>fish fry</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/spl. chicken.jpg" alt="" />
+            <p>Grand Spl. Chicken</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/masala egg.jpg" alt="" />
+            <p>Masala Omelette</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/egg nodle.jpg" alt="" />
+            <p>egg noodle</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/sandwich.jpg" alt="" />
+            <p>sandwich</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/cheese pizza.jpg" alt="" />
+            <p>cheese pizza</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/noodle.jpg" alt="" />
+            <p>veg noodle</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/vanilla.jpg" alt="" />
+            <p>vanilla</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/soups.jpg" alt="" />
+            <p>soups</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/cold drink.jpg" alt="" />
+
+            <p>cold drinks</p>
+          </div>
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/green tea.jpg" alt="" />
+            <p>green tea</p>
+          </div>
+
+          <div class="card">
+            <h6><a href="#contactus">Order Now</a></h6>
+            <img src="./images/foods items/oreo shake2.jpg" alt="" />
+            <p>oreo shakes</p>
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2021-03-20.jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2021-04-16.jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2021-04-21 (1).jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2022-02-23.jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2021-04-16 (1).jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/2021-10-05.jpg" alt="" />
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/gallery/baab32f5-2673-4a6c-9c0f-15e46c8c5641.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img src="./images/gallery/IMG20220220112440.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="about" id="aboutus">
+      <h2 class="heading">about us</h2>
+      <div class="container">
+        <div class="about_wrpr">
+          <div class="first_part">
+            <p>
+              <span>"hotel the grand"</span> is luxury hotel in Saharanpur Uttar
+              Pradesh 247001 House of comfort and luxury accommodation in the
+              heart of SAHARANPUR. <br /><br />
+
+              Our accommodation units are spacious and uniquely designed with
+              elegant interiors to make one full cozy and enjoy blissful bedroom
+              comfort. Having fully ventilated & air conditioned 30 rooms, The
+              Grand also has a large FiestaBanquet to celebrate the corporate &
+              social culture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us section  with-->
+
+    <section class="contact_us" id="contactus">
+      <h2 class="heading">contact us</h2>
+
+      <div class="sub_section">
+        <div class="container">
+          <div class="main_con_wrpr">
+            <div class="img_sec">
+              <img src="./images/unsplash/rasberry.png" alt="" />
+            </div>
+
+            <div class="buttn_sec">
+              <p>
+                booking and for any query please <span>mention below </span>
+              </p>
+              <div class="h6_btn">
+                <h6>
+                  <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWPGBggCqTdDgDtNsmXBWcFlHnrScBhQmWHrBjnVqBBZrPwKGWLsTVCfHThzqZKPsLnvg"
+                    target="_blank"
+                    ><i class="fa-solid fa-envelope"></i> email now</a
+                  >
+                </h6>
+                <h6>
+                  <a href="https://wa.me/919719975601" target="_blank"
+                    ><i class="fab fa-whatsapp"></i> whatsapp now
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact_location">
+        <div class="container">
+          <span
+            ><i class="fas fa-location-arrow"></i>IN FRONT OF DISTRICT COURT,
+            POLICE LINE, SAHARANPUR 247001</span
+          >
+        </div>
+      </div>
+
+      <div class="contact_wrpr">
+        <div class="main_details">
+          <div class="contact_numbers">
+            <i class="fa-solid fa-square-phone"></i>
+            <span>Call Us : +91 9719975601, 8859525863 </span>
+          </div>
+
+          <div class="email_">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email : hotelthegrand@gmail.com</span>
+          </div>
+
+          <div class="b_time">
+            <i class="fa-solid fa-clock"></i>
+            <span>Breakfast : 7:30 AM to 10:30 AM</span>
+          </div>
+
+          <div class="res_time">
+            <i class="fa-solid fa-clock"></i>
+            <span>Restaurant Service : 11:00 AM to 10:30 PM</span>
+          </div>
+        </div>
+
+        <div class="map_wrpr">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13829.043971373572!2d77.5361547566385!3d29.943170599592435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeab0decd7abd%3A0x85307925009116f1!2sPoliceLine%2C%20Saharanpur%2C%20Uttar%20Pradesh%20247001!5e0!3m2!1sen!2sin!4v1704805321925!5m2!1sen!2sin"
+            width="100%"
+            height="300px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_">
+      <div class="container">
+        <div class="copyright">
+          Copyright © <span id="current-year"></span>. All Rights Reserved By
+          <a href="#home">hotel the grand</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper and app.js file with firebase integration -->
+
+    <script type="module" src="./js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
